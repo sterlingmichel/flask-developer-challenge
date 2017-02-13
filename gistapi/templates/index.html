@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app="GitApi">
+    <head>
+        <title>GITAPI WebClient</title>
+
+        <!-- AngularJS Material Dependencies -->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-animate.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-resource.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-route.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <!-- Add third parties plugins -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+        <!-- Internal Custom Lib -->
+        <script type="text/javascript" src="{{ url_for('static', filename = 'js/ngStorage.js')}}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename = 'js/angular-ui-router.min.js')}}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename = 'js/restangular.js')}}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename = 'js/restangular-object-cache.js')}}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename = 'js/angular-block-ui.js')}}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename = 'js/gitapi.js')}}"></script>
+
+        <link rel="shortcut icon" href="{{ url_for('static', filename = 'img/favicon.ico')}}">
+        <link rel="stylesheet" href="{{ url_for('static', filename = 'css/gistapi.css')}}"/>
+        <link rel="stylesheet" href="{{ url_for('static', filename = 'css/angular-block-ui.css')}}"/>
+        
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <base href="/">
+    </head>
+    <body ng-view></body>
+</html>
