@@ -1,1 +1,36 @@
-list content
+<h1 class="page-header">Dashboard</h1>
+<div class="row placeholders">
+    <div class="col-xs-6 col-sm-3 placeholder">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+        <h4>Label</h4>
+        <span class="text-muted">Something else</span>
+    </div>
+    <div class="col-xs-6 col-sm-3 placeholder">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+        <h4>Label</h4>
+        <span class="text-muted">Something else</span>
+    </div>
+    <div class="col-xs-6 col-sm-3 placeholder">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+        <h4>Label</h4>
+        <span class="text-muted">Something else</span>
+    </div>
+    <div class="col-xs-6 col-sm-3 placeholder">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+        <h4>Label</h4>
+        <span class="text-muted">Something else</span>
+    </div>
+</div>
+<div id="grid1" ui-grid="gridOptions" ui-grid-pagination  ui-grid-tree-view class="grid"></div>
+
+<p>Current page: {{ gridApi.pagination.getPage()}} of {{ gridApi.pagination.getTotalPages()}}</p>
+<button type="button" class="btn btn-success" ng-click="gridApi.pagination.previousPage()">
+    previous page
+</button>
+<button type="button" class="btn btn-success" ng-click="gridApi.pagination.nextPage()">
+    next page
+</button>
+<button type="button" class="btn btn-success" ng-click="gridApi.pagination.seek(3)">
+    go to page 3
+</button>
+</div>
